@@ -1,0 +1,45 @@
+{
+  "name": "savitri",
+  "version": "1.0.0",
+  "description": "Savitri server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "lab -c -L",
+    "test-cover": "lab -c -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savitri/savitri"
+  },
+  "author": "Prashant Tiwari <prashaantt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/savitri/savitri/issues"
+  },
+  "homepage": "https://github.com/savitri/savitri",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "boom": "^3.1.2",
+    "confidence": "1.x.x",
+    "glue": "3.x.x",
+    "hapi": "12.x.x",
+    "hapi-mongo-models": "^4.1.0",
+    "hoek": "3.x.x",
+    "joi": "^8.0.4",
+    "leven": "^2.0.0",
+    "lodash": "^4.6.0",
+    "mongodb": "^2.1.7",
+    "wreck": "^7.0.0"
+  },
+  "devDependencies": {
+    "code": "2.x.x",
+    "eslint": "^1.10.3",
+    "eslint-config-hapi": "^8.0.1",
+    "eslint-plugin-hapi": "^4.0.0",
+    "lab": "8.x.x",
+    "nodemon": "1.x.x"
+  }
+}

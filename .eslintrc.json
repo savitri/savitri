@@ -1,0 +1,10 @@
+{
+    "extends": "hapi",
+    "ecmaFeatures": {
+        "destructuring": true
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    }
+}

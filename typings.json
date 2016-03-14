@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "hapi": "github:DefinitelyTyped/DefinitelyTyped/hapi/hapi.d.ts#c54072093a1a3a5c28f74dd7b8a57f45d061e536",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#20e1eb9616922d382d918cc5a21870a9dbe255f5"
+  }
+}
