@@ -18,7 +18,12 @@ Edition.parts.forEach((part) => {
             canto.sections.forEach((section) => {
 
                 const s = section.sentences.map((sentence) => {
+
+                    sentence.book = book.id;
+                    sentence.canto = canto.id;
+                    sentence.section = section.id;
                     sentence.ref = section.run + '.' + sentence.id;
+
                     return sentence;
                 });
 
@@ -32,4 +37,4 @@ o.ed = Edition.ed;
 o.t = Edition.t;
 o.sentences = sentences;
 
-Fs.writeFileSync(`${ file }-sentences.json`, JSON.stringify(o, null, 2));
+Fs.writeFileSync(`${file}-sentences.json`, JSON.stringify(o, null, 2));
